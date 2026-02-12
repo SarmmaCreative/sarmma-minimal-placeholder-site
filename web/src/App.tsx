@@ -27,7 +27,7 @@ function App() {
 
         {/* Portrait Text */}
         <div className="portrait:flex landscape:hidden items-center justify-center h-full w-full">
-          <h1 className="rotated-text text-gray-300 font-medium tracking-tighter leading-none select-none" style={{ fontSize: 'clamp(60px, 18vh, 150px)' }}>
+          <h1 className="rotated-text text-gradient-silver font-medium tracking-tighter leading-none select-none" style={{ fontSize: 'clamp(60px, 18vh, 150px)' }}>
             Sarmma
           </h1>
         </div>
