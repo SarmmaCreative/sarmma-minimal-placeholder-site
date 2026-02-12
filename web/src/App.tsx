@@ -3,14 +3,14 @@ function App() {
   return (
     <div className="min-h-screen w-full relative overflow-hidden font-display selection:bg-primary selection:text-white">
       {/* Landscape Background */}
-      <div className="absolute inset-0 bg-[#050505] landscape:block portrait:hidden" />
+      <div className="absolute inset-0 bg-background-dark landscape:block portrait:hidden" />
 
       {/* Portrait Background & Dot Pattern */}
-      <div className="absolute inset-0 bg-[#101922] portrait:block landscape:hidden">
+      <div className="absolute inset-0 bg-background-portrait portrait:block landscape:hidden">
         <div
           className="absolute inset-0 opacity-5 pointer-events-none"
           style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, #137fec 1px, transparent 0)',
+            backgroundImage: 'radial-gradient(circle at 2px 2px, #7aa2f7 1px, transparent 0)',
             backgroundSize: '40px 40px'
           }}
         />

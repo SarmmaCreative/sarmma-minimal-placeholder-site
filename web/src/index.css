@@ -1,38 +1,45 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer utilities {
-  .text-fluid-hero {
-    font-size: clamp(3rem, 15vw, 20rem);
-    line-height: 1;
-  }
-  
-  .rotated-text {
-    transform: rotate(90deg);
-    white-space: nowrap;
-  }
-  
-  .text-gradient-silver {
-    background: linear-gradient(135deg, #e2e2e2 0%, #9ca3af 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+@theme {
+  --color-primary: #7aa2f7;
+  /* Tokyo Night Blue */
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #1a1b26;
+  /* Tokyo Night Background */
+  --color-background-portrait: #16161e;
+  /* Darker Tokyo Night */
+
+  --font-display: "Space Grotesk", sans-serif;
+
+  --animate-fade-up: subtle-fade-up 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes subtle-fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
-@keyframes subtle-fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@utility text-fluid-hero {
+  font-size: clamp(3rem, 15vw, 20rem);
+  line-height: 1;
 }
 
-.animate-fade-up {
-  animation: subtle-fade-up 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+@utility rotated-text {
+  transform: rotate(90deg);
+  white-space: nowrap;
+}
+
+@utility text-gradient-silver {
+  background: linear-gradient(135deg, #a9b1d6 0%, #c0caf5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
