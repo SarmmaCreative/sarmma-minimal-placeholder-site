@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sarmma Mobile Portrait Minimal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }.rotated-text {
+            transform: rotate(90deg);
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 min-h-screen flex items-center justify-center font-display antialiased p-4">
+<div class="fixed inset-0 z-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, #137fec 1px, transparent 0); background-size: 40px 40px;">
+</div>
+<main class="relative z-10 w-full max-w-[400px] h-[85vh] max-h-[850px] bg-black rounded-[2.5rem] shadow-2xl border-[8px] border-gray-800 overflow-hidden flex items-center justify-center ring-1 ring-white/10">
+<div class="relative w-full h-full flex items-center justify-center">
+<div class="flex items-center justify-center h-full w-full">
+<h1 class="rotated-text text-gray-300 font-medium tracking-tighter leading-none select-none" style="font-size: clamp(60px, 18vh, 150px);">
+                    Sarmma
+                </h1>
+</div>
+</div>
+</main>
+<div class="fixed bottom-8 right-8 text-right hidden md:block">
+<p class="text-sm text-gray-500 font-display">Mobile Portrait Preview</p>
+<p class="text-xs text-primary mt-1 font-mono opacity-70">Design Concept: Minimal Typography</p>
+</div>
+
+</body></html>
